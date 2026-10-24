@@ -58,11 +58,25 @@
 
 ## 可达(KeDa)VPN网络拓扑、流媒体解锁与测速记录
 
+### 历史截图的文字结果
+
+来源为本页已有的九度测速机器人 A04 多线程下载截图。图中时间为 **2026-07-08 21:38:38（CST）**，后端标注“皮特电信-2000M”，具体测试城市未记录；版本 2.0.2-dev、后端 4.7.1，8 线程、Ping 3 次、V6 过滤。下表保留原图的 Gbps / Mbps 单位。
+
+| 节点（截图摘录） | TLS RTT | HTTPS 延迟 | 平均速度（原图单位） | 最高速度（原图单位） | 其他记录 |
+| --- | --- | --- | --- | --- | --- |
+| 香港V6-01 | 82ms | 351ms | 1.62Gbps | 1.98Gbps | AnyTLS；UDP：FullCone |
+| 狮城V6-01 | 52ms | 246ms | 1.50Gbps | 1.89Gbps | AnyTLS；UDP：FullCone |
+| 日本V6-05 | 117ms | 483ms | 1.18Gbps | 1.67Gbps | AnyTLS；UDP：FullCone |
+| 台湾V6-03 | 144ms | 461ms | 933.08Mbps | 1.14Gbps | AnyTLS；UDP：FullCone |
+| 美国V6-03 | 323ms | 1339ms | 9.66Mbps | 11.53Mbps | AnyTLS；UDP：PortRestrictedCone |
+
+同图不同地区节点的吞吐量差异明显。节点名、协议和 V6 筛选条件仅代表该次记录；测试后端并未写明上海 Azure，不应把它当作上海微软环境或本站新实测。
+
 ![可达(KeDa) 三网拓扑](https://i.eoht.net/airport/keda_analyze.webp)
 
 ![可达(KeDa) 流媒体解锁图](https://i.eoht.net/airport/keda_fulltest.webp)
 
-![可达(KeDa) 上海微软测速图](https://i.eoht.net/airport/keda_speed.webp)
+![可达(KeDa) 电信后端历史测速图](https://i.eoht.net/airport/keda_speed.webp)
 
 <a id="keda-related-guides"></a>
 
